@@ -85,10 +85,10 @@ def create_adr(
 
 
 def first_adr(adr_path):
-
+    
     full_adr_path, adr_text = create_adr(
         adr_path,
-        title_list=("Record", "architecture", "decisions"),
+        title_list=first_adr_data["filename_text"].split("-"),
         base_adr_data=first_adr_data,
     )
     if int(full_adr_path.name.split("-")[0]) > 1:
