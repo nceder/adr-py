@@ -3,7 +3,7 @@ import re
 
 
 def parse_adr_directory(adr_directory):
-    adr_path = pathlib.PosixPath(adr_directory)
+    adr_path = ensure_path(adr_directory)
     adr_file_paths = [
         (int(x.name.split("-")[0]), x)
         for x in adr_path.glob("[09]*.md")
@@ -24,6 +24,9 @@ def get_next_adr_number(adr_directory):
     next_adr_number = parse_adr_directory(adr_directory)[-1][0] + 1
     return next_adr_number
 
+def ensure_path(filepath):
+    adr_path = pathlib.PosixPath(filepath)
+    return adr_path
 
 def find_adr(adr_path, adr):
     adr_dir_list = parse_adr_directory(adr_path)
