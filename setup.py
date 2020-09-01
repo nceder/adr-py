@@ -2,10 +2,10 @@ from setuptools import setup
 
 
 setup(
-    name="adr-py",
+    name="adrpy",
     version="0.1.0",
     description="tool for managing Architecture Design Records",
-    packages=["adr-py"],
+    packages=["adrpy"],
     url='https://github.com/mypackage',
     author='N Ceder',
     author_email='info@naomiceder.tech',
@@ -13,7 +13,7 @@ setup(
 
     entry_points={
           'console_scripts': [
-              'adr-py = adr-py.__main__:main'
+              'adrpy=adrpy.__main__:main'
           ]
        }
 

@@ -8,9 +8,9 @@
 import argparse
 import os.path
 
-import init_directory
-import util
-import update_adr
+from . import init_directory
+from . import util
+from . import update_adr
 
 allowed_commands = (
     "init",

@@ -9,8 +9,8 @@
 
 """
 
-import util
-import new_adr
+from . import util
+from . import new_adr
 
 explanations = {
     "link": ["RELATED to", "RELATED to"],

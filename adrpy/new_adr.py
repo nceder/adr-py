@@ -6,7 +6,7 @@
 """
 
 import datetime as dt
-import util
+from . import util
 
 
 adr_template = """# {adr_num} {title_text}

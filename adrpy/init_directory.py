@@ -4,8 +4,8 @@
 """
 
 import pathlib
-import new_adr
-import util
+from . import new_adr
+from . import util
 
 
 def create_adr_dir(adr_dir_name):
