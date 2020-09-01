@@ -56,7 +56,7 @@ def load_adr(adr_file_name):
 
 def parse_adr(adr_text):
     results = re.search(
-        "# (?P<adr_num>\d+).+ (?P<title_text>[\s\w]+)\n.+Date: (?P<date_str>\d+-\d+-\d+).+"
+        "# (?P<adr_num><title_text>[\s\w]+)\n.+Date: (?P<date_str>\d+-\d+-\d+).+"
         "## Status\s+(?P<status>\w+)\s+## Context(?P<context>.+)## Decision(?P<decision>.+)"
         "## Consequences(?P<consequences>.+)",
         adr_text,
