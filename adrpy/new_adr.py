@@ -78,7 +78,7 @@ def create_adr(
     adr_data["date_str"] = date_str
     adr_data["title_text"] = title_text
     adr_data["filename_text"] = adr_filename
-    adr_path = adr_path.joinpath(util.ensure_path(adr_filename))
+    adr_path = ensure_path(adr_path).joinpath(adr_filename)
     return adr_path, adr_template.format(**adr_data)
 
 
