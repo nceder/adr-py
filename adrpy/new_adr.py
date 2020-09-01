@@ -9,7 +9,7 @@ import datetime as dt
 from . import util
 
 
-adr_template = """# {adr_num} {title_text}
+adr_template = """# {adr_num}. {title_text}
 
 Date: {date_str}
 
