@@ -32,16 +32,18 @@ Date: {date_str}
 """
 first_adr_data = {
     "adr_num": 1,
-    "title_text": "Record architecture decisions",
-    "filename_text": "record-architecture-decisions",
-    "date_str": "2020-08-30",
+    "title_text": "Architecture decisions folder initialized",
+    "filename_text": "architecture-decision-folder-initialized",
+    "date_str": "",
     "status": "Accepted",
-    "context": "We need to record the architectural decisions made on this project.",
+    "context": "Placeholder first ADR",
     "decision": (
-        "We will use Architecture Decision Records, as described by Michael Nygard in this article: "
-        "http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions"
+        "This is a place holder to initialize the folder for storing ADR's. You can replace this content "
+        "and use for an ADR, and you can rename the file, as long as you preserve the structure/headings and "
+        "begin the filename with '0001'." 
     ),
-    "consequences": "See Michael Nygard's article, linked above.",
+    "consequences": "For more on Architecture Decision Records, refer to Michael Nygard's article: "
+        "http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions"
 }
 base_adr_data = {
     "adr_num": None,
@@ -49,11 +51,11 @@ base_adr_data = {
     "filename_text": "",
     "date_str": "",
     "status": "Proposed",
-    "context": "The issue motivating this decision, and any context that influences or constrains the decision.",
-    "decision": "The change that we're proposing or have agreed to implement.",
+    "context": "Brief description of the problem, constraints, and other considerations (pro's/con's) for this ADR",
+    "decision": "Brief descripton of the change to be made.",
     "consequences": (
-        "What becomes easier or more difficult to do and any risks introduced "
-        "by the change that will need to be mitigated."
+        "How will this change improve the project going forward? "
+        "What considerations, risks, or other issues will need to considered or mitigated?"
     ),
 }
 
