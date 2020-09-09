@@ -29,7 +29,7 @@ def update_status(adr_path, command, old_adr, params):
     if command == "new":
         title_list = [old_adr] + params
         old_adr_path, old_adr_text = new_adr.create_adr(
-            adr_path, [old_adr] + title_list
+            adr_path, title_list
         )
     else:
         old_adr = util.find_adr(adr_path, old_adr)
